@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Weather Dashboard using JavaScript Fetch API">
+
+    <meta name="keywords"
+          content="Weather, API, JavaScript, Fetch API">
+
+    <meta name="author"
+          content="Santhosh V S">
+
+    <title>Live Weather Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>☁ Live Weather Dashboard</h1>
+
+    <p>
+        Real-Time Weather using REST API
+    </p>
+
+</header>
+
+<main>
+
+    <section class="search-section">
+
+        <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter City Name">
+
+        <button
+        id="searchBtn">
+
+        Get Weather
+
+        </button>
+
+    </section>
+
+    <section
+    id="loader"
+    class="loader">
+
+        Loading Weather...
+
+    </section>
+
+    <section
+    id="error"
+    class="error">
+
+        Unable to fetch weather.
+
+    </section>
+
+    <section
+    id="weatherBox"
+    class="weather-box">
+
+        <h2 id="cityName">
+
+            City
+
+        </h2>
+
+        <img
+        id="weatherIcon"
+        src=""
+        alt="Weather Icon">
+
+        <div class="weather-grid">
+
+            <div class="card">
+
+                <h3>Temperature</h3>
+
+                <p>
+
+                    <span id="temp">
+
+                        --
+
+                    </span>
+
+                    °C
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Humidity</h3>
+
+                <p>
+
+                    <span id="humidity">
+
+                        --
+
+                    </span>
+
+                    %
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Wind Speed</h3>
+
+                <p>
+
+                    <span id="wind">
+
+                        --
+
+                    </span>
+
+                    km/h
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Condition</h3>
+
+                <p id="condition">
+
+                    --
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Country</h3>
+
+                <p id="country">
+
+                    --
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        © 2026 Santhosh V S
+
+    </p>
+
+    <p>
+
+        Thiranex Internship Task 4
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
